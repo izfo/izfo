@@ -23,7 +23,7 @@ body {
 }
 
 img {
-    width: 4rem;
+    width: 5rem;
     display: inline;
     margin-right: 2.5rem;
     margin-left: 0.5rem;
@@ -71,12 +71,22 @@ input[type="checkbox"] {
     accent-color: rgb(100, 100, 140);
 }
 
-input[type="number"],
-input[type="text"] {
+input[type="number"] {
     border: 0px;
-    padding: 10px;
+    padding: 8px;
     border-radius: 8px;
     height: 2rem;
+}
+
+input[type="text"] {
+    border: 0px;
+    padding: 8px 8px 8px 15px;
+    border-radius: 8px;
+    height: 2rem;
+}
+
+input[type=number] {
+    text-align: center;
 }
 
 .button-container {
@@ -128,15 +138,13 @@ fieldset>p {
     margin-left: 5px;
 }
 
-.medication-text-box {
-    width: 100%;
-    margin-left: 10px;
-}
-
+.medication-text-box,
 .other-text-box {
     width: 100%;
     margin-left: 10px;
+    padding-left: 15px;
 }
+
 
 .diagnosis-text-area {
     border-radius: 20px;
@@ -307,8 +315,8 @@ input[type=number] {
     input[type=number] {
         height: 2.5rem;
         border-radius: 12px;
-        padding: 8px;
     }
+
 
     #cigarette-number {
         width: 3rem;
