@@ -70,6 +70,7 @@ input[type="text"] {
     border: 0px;
     padding: 10px;
     border-radius: 8px;
+    height: 1rem;
 }
 
 .button-container {
@@ -161,4 +162,155 @@ input[type=number] {
     font-weight: normal;
     color: #706F6F;
     font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+
+@media (max-width: 390px) {
+
+    h1 {
+        font-size: 4.1rem;
+    }
+
+    img {
+        padding-left: 35.2px;
+        margin: 0px 40px 0px 0px;
+        width: 4.5rem;
+    }
+
+    .header {
+        padding: 0 0 0 1.5rem;
+    }
+
+    .main-content {
+        background-color: rgb(183, 200, 209);
+        padding: 1.5rem;
+    }
+
+    .radio-buttons {
+        flex-direction: column;
+    }
+
+    form,
+    p,
+    .big-button,
+    .diagnosis-text-area,
+    input[type=text],
+    input[type=number] {
+        font-size: 2.5rem;
+    }
+
+    .big-button {
+        width: 50%;
+        height: 7rem;
+        padding: 20px;
+        border-radius: 25px;
+        margin: 30px;
+    }
+
+    .radio-button {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    fieldset>p {
+        width: 25rem;
+        margin: 0px;
+    }
+
+    br {
+        display: none;
+    }
+
+    input[type=text]::placeholder {
+        font-size: 2.3rem;
+    }
+
+    .medication-text-box {
+        width: 27rem;
+    }
+
+    .other-text-box {
+        width: 33.5rem;
+    }
+
+    input[type=radio] {
+        margin-top: 20px;
+        visibility: hidden;
+    }
+
+    .risk-factors-item {
+        display: flex;
+        align-items: center;
+        padding: 0px 0px 60px 0px;
+    }
+
+    .risk-factors-title {
+        margin: 0px;
+        padding-left: 35.2px;
+        padding-bottom: 40px;
+    }
+
+    #age,
+    #bone-loss {
+        margin: 5px 10px 10px 10px;
+    }
+
+    #cigarette-number,
+    #medication-text {
+        margin: 0px 10px 0px 15px;
+    }
+
+    input[type=text],
+    input[type=number] {
+        height: 2.5rem;
+        border-radius: 18px;
+        padding: 20px;
+    }
+
+    #cigarette-number {
+        width: 3rem;
+    }
+
+    #percentage-label {
+        margin-top: 15px;
+    }
+
+    .diagnosis-text-area {
+        border-radius: 25px;
+        min-height: 15rem;
+    }
+
+    .radio-button label {
+        background-color: rgb(171, 188, 197);
+        border-radius: 25px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        margin-bottom: 50px;
+        color: white;
+    }
+
+    input[type=radio]:checked+label {
+        background-color: rgb(100, 100, 140);
+    }
+
+    input[type=checkbox] {
+        width: 3rem;
+        height: 3rem;
+        clip-path: circle(60% at 50% 50%);
+    }
+
+    .label-risk-factors-item {
+        line-height: 2;
+    }
+
+    fieldset {
+        margin-bottom: 0.5rem;
+    }
+
 }
