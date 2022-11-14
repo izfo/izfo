@@ -71,6 +71,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
         let errorMessages = [];
+        if (age < 0) {
+            errorMessages.push("- input an age greater than 0")
+        }
+
+        if (boneLoss > 100) {
+            errorMessages.push("- enter a percentage of interproximal bone loss that is less than or equal to 100%")
+        }
+
+        if (boneLoss < 0) {
+            errorMessages.push("- enter a percentage of interproximal bone loss that is greater than or equal to 0%")
+        }
+
         if (!age) {
             errorMessages.push("- fill in the patient's age")
         }
@@ -97,7 +109,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
         if (errorMessages.length > 0) {
             alert(`Please\n${errorMessages.join("\n")}`);
+            return;
         }
+
 
 
         let extent;

@@ -5,6 +5,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: rgb(183, 200, 209);
+    padding: 30px;
 }
 
 .container {
@@ -17,7 +18,7 @@ body {
 .main-content {
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 30px;
-    padding: 3rem;
+    padding: 4rem;
     line-height: 1.5;
 }
 
@@ -75,7 +76,7 @@ input[type="text"] {
     border: 0px;
     padding: 10px;
     border-radius: 8px;
-    height: 1rem;
+    height: 2rem;
 }
 
 .button-container {
@@ -86,7 +87,7 @@ input[type="text"] {
     display: flex;
     margin: auto;
     align-items: center;
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 
 fieldset {
@@ -108,7 +109,7 @@ fieldset>p {
 }
 
 .radio-button {
-    width: 35%;
+    width: 33.333%;
     display: flex;
     align-items: flex-start;
 }
@@ -128,12 +129,12 @@ fieldset>p {
 }
 
 .medication-text-box {
-    width: 23rem;
+    width: 100%;
     margin-left: 10px;
 }
 
 .other-text-box {
-    width: 25rem;
+    width: 100%;
     margin-left: 10px;
 }
 
@@ -169,12 +170,58 @@ input[type=number] {
     font-family: 'Montserrat', sans-serif;
 }
 
+.risk-factors-container {
+    width: 100%;
+}
+
+.risk-factors-item {
+    display: flex;
+    max-width: 30rem;
+    align-items: center;
+}
+
+
+@media (max-width: 790px) {
+
+    body {
+        padding: 30px;
+    }
+
+    fieldset {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    #age,
+    #bone-loss {
+        width: 3rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    img {
+        padding-bottom: 1rem;
+    }
+
+    .header {
+        margin-top: 2rem;
+    }
+
+    p {
+        padding-bottom: 15px;
+    }
+}
 
 
 
+@media (max-width: 480px) {
 
-@media (max-width: 390px) {
-
+    body {
+        padding: 10px;
+    }
 
     h1 {
         font-size: 2.2rem;
@@ -182,10 +229,11 @@ input[type=number] {
 
     img {
         margin: 0px 30px 0px 10px;
+        padding-bottom: 0;
     }
 
     .header {
-        padding: 0 0 0 1.5rem;
+        padding: 0 0 0 0.5rem;
         margin-top: 2rem;
     }
 
@@ -237,13 +285,12 @@ input[type=number] {
     .risk-factors-item {
         display: flex;
         align-items: center;
-        padding: 0px 0px 30px 10px;
+        padding: 0px 0px 20px 10px;
         flex-wrap: wrap;
     }
 
     .risk-factors-title {
         margin: 0px;
-        padding-left: 25px;
         padding-bottom: 20px;
     }
 
@@ -305,6 +352,7 @@ input[type=number] {
 
     fieldset {
         margin-bottom: 0.5rem;
+        flex-direction: row;
     }
 
     .medication-text-box,
@@ -314,5 +362,28 @@ input[type=number] {
         margin-top: 10px;
         width: 97%;
     }
+}
 
+@media (max-width:320px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    img {
+        width: 3rem;
+    }
+
+    .header {
+        padding: 0 0 0 0.5rem;
+    }
+
+    form,
+    p,
+    .big-button,
+    .diagnosis-text-area,
+    input[type=text],
+    input[type=number],
+    input[type=text]::placeholder {
+        font-size: 0.8rem;
+    }
 }
