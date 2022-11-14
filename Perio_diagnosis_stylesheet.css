@@ -170,6 +170,10 @@ input[type=number] {
 
 @media (max-width: 390px) {
 
+    .container {
+        width: 100%;
+    }
+
     h1 {
         font-size: 4.1rem;
     }
