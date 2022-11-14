@@ -163,7 +163,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             }
         }
         if (tobaccoProductsCheckbox.checked) riskFactors.push("use of tobacco products other than cigarettes")
-        if (diabetesCheckbox.checked) riskFactors.push("sub-optimally controlled diabetes")
+        if (diabetesCheckbox.checked) riskFactors.push("suboptimally controlled diabetes")
         if (stressCheckbox.checked) riskFactors.push("stress")
         if (familyHistoryCheckbox.checked) riskFactors.push("family history/genetic")
 
